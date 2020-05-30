@@ -1,7 +1,15 @@
 #testing scripts
-
-
 require_relative 'Passport.rb'
+require_relative 'RecordDatabase.rb'
+
+require 'sinatra'
+
+set :protection, :except => :frame_options
+set :bind, '0.0.0.0'
+
+get '/' do
+  erb :index, :locals => { host: request.host }
+end
 
 testPass = Passport.new("asreedh", "Aneesh", "N/A", "Sreedhara", "02/13/2003")
 
@@ -28,5 +36,12 @@ puts useRecords.isValidChain
 
 blockArray[1].location = "Geneva"
 puts useRecords.isValidChain
-
 puts testPass.toString
+
+db = RecordDatabase.new("test-files/test_records.txt")
+puts db.checkPassport(testPass)
+
+testPass2 = Passport.new("kpeters4", "Karl", "N/A", "Peterson", "01/01/2002")
+puts db.checkPassport(testPass2)
+
+db.updatePassport(testPass2)

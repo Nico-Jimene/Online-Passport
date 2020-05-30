@@ -42,9 +42,13 @@ class Passport
   end
 
   def toString
-    retString = "Holder:" + @id + "-" + @firstName + "-" + @middleName + "-" + @lastName + "-" + @dateOfBirth + "\n"
+    retString = "*" + @id + "-" + @firstName + "-" + @middleName + "-" + @lastName + "-" + @dateOfBirth + "\n"
     retString += @useRecords.toString 
     return retString
+  end
+
+  def equals(other)
+    return other.toString==toString
   end
 
 end
