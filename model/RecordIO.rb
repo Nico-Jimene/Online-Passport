@@ -23,13 +23,13 @@ class RecordIO
   end
 
   def self.writePassportsToFile(filepath, passports)
-    file = File.open(filepath, "w")
     outString = ""
     for passport in passports
-      outString += "\n" + passport.toString
+      outString += passport.toString + "\n"
     end
-    outString = outString.strip
-    file.print outString
+
+    file = File.open(filepath, "w")
+    file.print outString.strip
   end
 
 end

@@ -11,7 +11,7 @@ class VerificationSystem
   end
 
   def addDatabase(filepath)
-    @databases << RecordDatabase.new(filepath)
+    @databases.push RecordDatabase.new(filepath)
   end
 
   def updatePassport(pass)
