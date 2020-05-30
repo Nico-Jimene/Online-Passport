@@ -1,9 +1,14 @@
-# Online-Passport
-Submission for the 2020 MLH Summer League RookieHacks Hackathon. An implementation of a potential block-chain application to adjust the current passport system
+# Online Passport
 
-An Overview
+Submission for the 2020 MLH Summer League RookieHacks Hackathon. An implementation of a potential block-chain application to adjust the current passport system. 
 
-We are going to be making a decentralized passport verification system to prevent people from altering passports or creating fake passports. The benefits of this system include speeding up the passport verification process (leading to shorter wait times at airports, for example) as well as increasing the ease of verification. We will do this by using blockchain.
+## RookieHacks Hackathon Theme
+
+The theme of this hackathon was to embrace the word `rookie`. This led to two separate paths. One path involved beginners to try and learn something new and make a final project. The other path was the one my team and I took was to learn a brand new framework in just 2 days and make a final project using it. Since we all knew other languages beforehand, we all decided to learn Ruby and make our project with that. We also decided to learn block-chain for the first time and use that as the key technology of our application. 
+
+## Overview of Our Completed Project
+
+We made a decentralized passport verification system to prevent people from altering passports or creating fake passports. The benefits of this system include speeding up the passport verification process (leading to shorter wait times at airports, for example) as well as increasing the ease of verification. We will do this by using blockchain.
 
 Everyone’s passports will contain a digital part. This part will store passport information, and this information can be used by a verification system to verify the passport. Included in the stored information is a record of each time the passport was used, stored in blocks (each block holding a record of a time the passport was used, as well as the data held on the passport at the time of use). The verification system will consist of several identical databases. Each database holds everyone’s passport data, stored in blocks (each block holding a record of a time the passport was used, as well as the data held on the passport at the time of use).  Whenever someone tries to use their passport, their blockchain of passport data will be checked among all of the databases in the verification system. If the passport is valid, the system will then add the record of visit to the passport, and update all databases. 
 
