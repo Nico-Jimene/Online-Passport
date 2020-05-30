@@ -6,6 +6,8 @@ class VerificationSystem
     @databases = Array.new
   end
 
-  addDatabase
+  def addDatabase(db)
+  
+  end
 
 end
