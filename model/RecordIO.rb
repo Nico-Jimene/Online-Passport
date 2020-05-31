@@ -18,7 +18,7 @@ class RecordIO
         line = line.strip
         line = line.split("-")
         passports[size - 1].addUseRecord(line[0], line[1])
-        passports[size - 1].useRecords[recordNum]
+        passports[size - 1].useRecords.blocks[recordNum + 1]
       end
     end
 
