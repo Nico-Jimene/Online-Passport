@@ -40,6 +40,8 @@ class ConsoleImplementation
       @verificationSystem.updatePassport(newPass)
     else
       filepath = "/home/runner/Online-Passport/console-implementation/passport_files/" + filepath
+      passport = RecordIO.readPassportsFromFile(filepath)[0]
+      File.write(filepath, passport.toString)
     end
     puts "Thank you..."
 
