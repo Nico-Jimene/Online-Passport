@@ -1,6 +1,8 @@
 # Online Passport
 
-Submission for the 2020 MLH Summer League RookieHacks Hackathon. An implementation of a potential block-chain application to adjust the current passport system. 
+Submission for the 2020 MLH Summer League RookieHacks Hackathon. An implementation of a potential block-chain application to adjust the current passport system. Our final submission to the Hackathon on Devpost can be seen at the following ![link](https://devpost.com/software/online-passport) or below.
+
+https://devpost.com/software/online-passport
 
 ## RookieHacks Hackathon Theme
 
@@ -27,3 +29,9 @@ git clone https://github.com/aahmad4/Online-Passport
 ```
 ruby main.rb
 ```
+
+##Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
