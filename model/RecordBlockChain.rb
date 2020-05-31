@@ -19,6 +19,13 @@ class RecordBlockChain
     @size += 1
   end
 
+  def addBlockWithPrevHash(location, date, hash)
+    previousHash = hash
+    newBlock = RecordBlockChain::RecordBlock.new(location, date, previousHash)
+    @blocks[@size] = newBlock
+    @size += 1
+  end
+  
   def getLastBlock
     return @blocks[size - 1]
   end

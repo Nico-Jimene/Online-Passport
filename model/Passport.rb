@@ -41,6 +41,10 @@ class Passport
     @useRecords.addBlock(location, date)
   end
 
+  def addUseRecordWithPrevHash(location, date, hash)
+    @useRecords.addBlockWithPrevHash(location, date, hash)
+  end
+
   def toString
     retString = "*" + @id + "-" + @firstName + "-" + @middleName + "-" + @lastName + "-" + @dateOfBirth + "\n"
     retString += @useRecords.toString 

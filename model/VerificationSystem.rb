@@ -43,9 +43,9 @@ class VerificationSystem
     return true
   end
 
-  def checkDatabaseIntegrity
-    # TODO
-    return true 
-  end
+  # def checkDatabaseIntegrity
+  #   # TODO
+  #   return true 
+  # end
 
 end
