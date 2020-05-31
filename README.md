@@ -15,3 +15,15 @@ Everyone’s passports will contain a digital part. This part will store passpor
 The passport cannot be altered, because as soon as it is, its hash changes, and no longer matches any of the verification databases. Past records cannot be altered without going to extreme lengths, because you would have to not only change the records on your passport, but you would also have to change the records in every single database in the verification system. Not only this, but every single record AFTER the one the was altered would have to be altered as well, for every database, thanks to the nature of blockchain.
 
 The result is a secure system to hold passport data. This system would be incredibly hard to alter. The system could flourish into more practical uses concerning security through E-Mails and Cyber Security.
+
+## Clone
+
+```
+git clone https://github.com/aahmad4/Online-Passport
+```
+
+## Usage 
+
+```
+ruby main.rb
+```
