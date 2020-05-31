@@ -20,18 +20,16 @@ class RecordDatabase
 
   def updatePassport(pass)
     passports = RecordIO.readPassportsFromFile(@location)
-    updatedPassports = Array.new
-    
+
+    updatedPassports = []
+
     for passport in passports
       if passport.getId!=pass.getId
         updatedPassports.push passport
-      else 
-        updatedPassports.push pass
       end
     end
 
-    puts updatedPassports
-
+    updatedPassports.push pass
     RecordIO.writePassportsToFile(@location, updatedPassports)
   end
   

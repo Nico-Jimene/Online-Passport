@@ -1,7 +1,3 @@
-*kpeters4-Karl-N/A-Peterson-01/01/2002
-*mTaylor-Matthew-N/A-Taylor-01/01/2002
-*gBaskel-Graham-N/A-Baskel-01/01/2002
-*rBlox-Road-N/A-Blox-01/01/2002
 *asreedh-Aneesh-N/A-Sreedhara-01/01/2002
 	Geneva-someDate-aabcefd19c071ece75749861c0017aa9cc0eafa7
 	USA-test-c6b54e57ceb11092cd26369d28c703d00f2ef2b0

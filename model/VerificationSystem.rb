@@ -8,6 +8,11 @@ class VerificationSystem
 
   def initialize
     @databases = Array.new
+
+    addDatabase('/home/runner/Online-Passport/model/database_files/test_db_1.txt')
+    addDatabase('/home/runner/Online-Passport/model/database_files/test_db_2.txt')
+    addDatabase('/home/runner/Online-Passport/model/database_files/test_db_3.txt')
+
   end
 
   def addDatabase(filepath)
@@ -31,7 +36,7 @@ class VerificationSystem
       return false
     end
     for db in @databases
-      if !db.checkPassport
+      if !db.checkPassport(pass)
         return false
       end
     end

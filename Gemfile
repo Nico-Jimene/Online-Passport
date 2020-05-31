@@ -15,3 +15,7 @@ gem "conversio", "~> 0.1.2"
 gem "rails", "~> 6.0"
 
 gem "test-unit", "~> 3.3"
+
+gem "bcrypt", "~> 3.1"
+
+gem "params", "~> 1.1"
